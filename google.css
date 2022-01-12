@@ -1,0 +1,253 @@
+body, html {
+    background-color:#202124;
+    width : 100%;
+    margin : 0;
+    padding : 0;
+}
+
+  header {
+    align-content: right;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+body, input, button {
+  font-family: arial,sans-serif
+}
+
+.top {
+  position : relative;
+  left : 75%;
+  width: 20%;
+  text-align : right;
+  padding: 18px;
+}
+
+.a-top:visited, .a-top:link {
+  font-size: 80%;
+  display: inline-block;
+  line-height: 34px;
+  vertical-align: middle;
+  color : rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.a-top:hover, .a-top:active {
+  text-decoration: underline;
+}
+
+
+  .center {
+    text-align: center;
+    width : 100%;
+    display : inline-block;
+  }
+  
+  .search-bar {
+    z-index: 2;
+    border: solid 0.5px;
+    border-color :  #5f626b;
+    border-radius: 30px;  
+    display : inline-block;
+    margin : 22px;
+    margin-bottom : 19px;
+    padding : 12px;
+    padding-bottom: 13px;;
+    width : 40.8%;
+  }
+
+  .search-bar:hover {
+    border: solid 1.5px;
+    border-color: #1112138e;
+    background-color: #323338;
+    box-shadow: #171717;
+  }
+
+  .text {
+    z-index : 4;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    color: #e8eaed;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    font-size: 16px;
+    width : 88%;
+    margin-left : 30px;
+    margin-right : 30px;
+  }
+
+  .button {
+    border-radius: 4px;;
+    background-color : #323338;
+    border : solid 1px;
+    border-color : #323338;
+    outline : none;
+    color : #e8eaed;
+    line-height: 27px;
+    height : 36px;
+    min-width: 54px;
+    cursor : pointer;
+    font-size : 14px;
+    padding : 0 16px;
+    margin: 11px 4px;
+    text-align : center;
+  }
+  
+  .button:hover {
+    border-color : #5f626b;
+  }
+
+  .p-up {
+    color : lightgrey;
+    font-size: small;
+  }
+
+  a:link,  a:visited{
+    color : rgb(95, 153, 207);
+    text-decoration: none;
+  }
+
+  a:hover, a:active{
+    text-decoration: underline;
+  }
+
+  .english_link {
+    font-size : small;
+    padding : 12px;
+  }
+
+  footer {
+    width : 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #171717;
+    font-size: 14px;
+    color: #9aa0a6;
+  }
+
+  .country {
+    padding : 2px 30px;
+    border-bottom: 1px solid #212327;
+    font-size : 15px;
+  }
+
+  .end {
+    text-align: center;
+  }
+
+  .end_links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom : 15px;
+    padding-top : 20px;
+    padding-left: 30px;
+    padding-right : 30px;
+  }
+
+  .leaf {
+    width : 11px;;
+  }
+
+  .dots {
+    width : 24px;
+    fill : rgb(255, 255, 255);
+  }
+
+  .dots-div {
+    z-index : 2;
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+    padding: 7px 7px 0 7px;
+    border-radius: 50%;
+  }
+  .dots-div:hover {
+      background-color: #323338;
+  }
+
+  .connexion:link, .connexion:visited {
+    font-size : 15px;
+    color: #202124;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-decoration: none;
+    background : #8ab4f8;
+    padding : 8px 15px;
+  }
+
+  .connexion:hover, .connexion:active {
+    background : #97bbf7;
+  }
+
+  .dots-input {
+    width : 20px;
+    height : 30px;
+    position : fixed;
+    right : 180px;
+    cursor: pointer;
+    z-index: 4;
+    opacity : 0;
+  }
+
+
+  .dots-menu {
+    position: fixed;
+    top: 70px;
+    right: 30px;
+    height: 55vh;
+    width: 90%;
+    max-width: 300px;
+    padding-top: 10px;
+    text-align: left;
+    background-color: #36363d;
+    z-index: 3;
+    display: none;
+    overflow-y: auto;
+    border: solid 2.5px;
+    box-shadow: #171717;
+    border-color: #171717d8;
+    border-radius: 10px 0 0 10px;
+}
+
+  .dots-input:checked ~ .dots-menu {
+    display: block;
+  }
+
+  .upper-dots {
+    flex-wrap: wrap;
+  }
+
+  ul {
+    list-style-type: none;
+}
+  
+  li {
+    margin : 4px;
+    text-decoration: none;
+    font-size:larger;
+  }
+
+  a:link, a:visited {
+    color:rgb(80, 147, 209);
+    font-style: bold;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color : #97bbf7;
+  }
+
+  .upper {
+    border-bottom: 2px solid #484c55;
+  }
+
+  .lower {
+    padding-top: 20px;
+  }
