@@ -46,12 +46,21 @@ ul {
     color : #c2fcad;
 }
 
+.Home {
+    height : 100vh;
+}
+
 .name {
     font-family: 'Libre Baskerville', serif;
     font-size : 9vw;
     padding-top : 90px;
     font-style: bold;
     text-shadow: #3b1841 -2px 2px 10px;
+}
+
+.NFT {
+    background-color : #c2fcad;
+    height : 100vh;
 }
 
 .cursor {
@@ -62,7 +71,8 @@ ul {
     border-radius : 50%;
     position : absolute;
     animation : anim1 1s infinite alternate;
-    box-shadow: #3b1841 -3px 3px 10px;;
+    box-shadow: #3b1841 -3px 3px 10px;
+    /*background : rgba(253, 195, 244, 0.123); BONNE POSSIBILITÉ*/
 }
 
 .cursor::before {
@@ -73,15 +83,14 @@ ul {
     transform : translate(-50%, -50%);
     width : 5px;
     height : 5px;
-    background : rgba(220, 20, 60, 0);
     border-radius: 50%;
 }
 
 .expand {
     animation: anim2 .5s;
-    /*background : crimson;*/
-    border: 1px solid #3b1841;
+    /*border: 1px solid #3b1841;*/
     box-shadow: #3b1841 -3 3 10px;
+    /*background : rgba(253, 195, 244, 0.123); BONNE POSSIBILITÉ*/
 }
 
 @keyframes anim1 {
