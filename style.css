@@ -54,6 +54,11 @@ ul {
     text-shadow: #3b1841 -2px 2px 10px;
 }
 
+.NFT {
+    background-color : #c2fcad;
+    height : 100vh;
+}
+
 .cursor {
     width : 40px;
     height : 40px;
