@@ -1,5 +1,6 @@
 * {
-    background-color : #080820
+    background-color : #AFE3C0; 
+    /* #080820 */
 }
 
 body {
@@ -34,4 +35,13 @@ body {
     0% { scale : 1; }
     50% { scale : 2; }
     100% {scale : 1; }
+}
+
+/* SQUARES */
+
+.square1 {
+    width : 40px;
+    height: 40px;
+    background-color: #AFE3C0;
+    box-shadow: -3px -3px 10px #d2efdc 3px 3px 10px #95daac;
 }
