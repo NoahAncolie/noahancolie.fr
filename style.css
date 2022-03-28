@@ -1,6 +1,5 @@
-* {
+/* * {
     background-color : #AFE3C0; 
-    /* #080820 */
 }
 
 body {
@@ -30,19 +29,107 @@ body {
     10% { border-radius : 0%; }
     100% { height: 100vh; border-radius : 0% ; top : 0%; rotate : 90deg;}
 }
-  
+
 @keyframes bounce {
     0% { scale : 1; }
     50% { scale : 2; }
     100% {scale : 1; }
 }
 
-/* SQUARES */
-
 .square1 {
-    margin: 20px;
-    width : 40px;
-    height: 40px;
+    background : linear-gradient(-45deg,#a4dfb8, #c3ead0);
+    border-radius : 20px;
+    margin: 50px;
+    width : 100px;
+    height: 100px;
     background-color: #AFE3C0;
-    box-shadow: -3px -3px 10px #d2efdc 3px 3px 10px #95daac;
+    box-shadow: -3px -3px 7px #d2efdc, 3px 3px 7px #86d5a0;
+}
+
+.square2 {
+    border-radius : 20px;
+    margin: 50px;
+    width : 100px;
+    height: 100px;
+    background-color: #AFE3C0;
+    box-shadow: -3px -3px 7px #d2efdc inset, 3px 3px 7px #86d5a0 inset;
+} */
+
+* {
+    margin : 0;
+    padding : 0;
+}
+
+.title {
+    position : absolute;
+    top : 100px;
+    left : 38%;
+    color : white;
+    text-shadow: 0 0 10px black;
+}
+
+.horizon {
+    background-color : skyblue;
+    height : 100vh;
+    width : 100vw;
+    display : flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.caisse {
+    fill : green;
+    width : 30px;
+    height : 30px;
+    position :absolute;
+    right : 0;
+    bottom : 0;
+    animation : tourne infinite;
+}
+
+.player {
+    width : 60px;
+    height : 60px;
+    fill : red;
+    position : absolute;
+    bottom : 0;
+    right : 50%;
+}
+
+.jump {
+    animation : jump 1s ease-in-out;
+}
+
+@keyframes jump { 
+    50% { transform: translateY(-80px);}
+    60% { transform: translateY(-80px);}
+}
+
+@keyframes tourne {
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.view-box {
+    border : solid green;
+    width : 100vw;
+    height : 40vh;
+}
+
+/*///////////////////////////////////////////////////////*/
+
+#play {
+    width : 30vw;
+    height : 20vh;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border : solid grey;
+    position : absolute;
+    top : 0;
+    left : 0;
+    right : 0;
+    bottom : 0;
+    margin : auto;
 }
