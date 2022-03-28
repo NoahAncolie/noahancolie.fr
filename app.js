@@ -3,7 +3,7 @@ document.getElementById("play").addEventListener("click", function() {
     score = 0;
     document.getElementById("play").style.opacity = "0"
     const interval = setInterval(function() {
-    if (document.getElementsByClassName("caisse")[0].getBoundingClientRect().left === 2) {
+    if (document.getElementsByClassName("caisse")[0].getBoundingClientRect().left === 2 || document.getElementsByClassName("caisse")[0].getBoundingClientRect().left === 1) {
         document.getElementsByClassName("caisse")[0].remove()
         // if (!document.getElementsByClassName("caisse")) { 
         //     clearInterval(interval);
