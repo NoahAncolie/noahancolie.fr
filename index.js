@@ -58,22 +58,22 @@ const line = new THREE.Line( geometry, material );
 
 scene.add( line );
 
-/* function animate() {
+function animate() {
 	requestAnimationFrame( animate );
     //line.rotation.x += 0.01;
     //line.rotation.y += 0.01;
 
 	renderer.render( scene, camera );
-} */
+} 
 
 
 
-window.addEventListener("mousemove", function(e){
+// window.addEventListener("mousemove", function(e){
 	
-	line.rotation.y += e.clientX / 10000
-	line.rotation.x -= e.clientY / 10000
-	renderer.render( scene, camera );
-}) 
+// 	line.rotation.y += e.clientX / 10000
+// 	line.rotation.x -= e.clientY / 10000
+// 	renderer.render( scene, camera );
+// }) 
 
 renderer.render( scene, camera );
 animate(); 
